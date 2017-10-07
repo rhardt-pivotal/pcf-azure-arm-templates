@@ -45,8 +45,6 @@
   },
   "variables": {
     "opsManVMName": "PCFOpsManager",
-    "pcfVNetID": "[resourceId('Microsoft.Network/virtualNetworks', 'PCF')]",
-    "mgmtSubnetRef": "[concat(variables('pcfVNetID'),'/subnets/', 'Management')]",
     "lbName": "ERT-LB",
     "lbID": "[resourceId('Microsoft.Network/loadBalancers', variables('lbName'))]",
     "frontEndIPConfigID": "[concat(variables('lbID'),'/frontendIPConfigurations/ERTFrontEndIP')]",
